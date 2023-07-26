@@ -6,7 +6,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 pages = requests.get('https://www.kinopoisk.ru/lists/movies/top_1000/')
 soup = BeautifulSoup(pages.text, 'lxml')
-TOKEN = '6178487250:AAFI9D4GKTeuClzzJyKqJej2MQwvGAYnl0o'
+TOKEN = ''
 bot = telebot.TeleBot(TOKEN)
 keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 keyboard.add(KeyboardButton('Смотреть фильм'))
